@@ -1,4 +1,5 @@
 // Rotate the given array by "k" steps, where k is non-negative. Note: k can be greater than 'n' as well, where n is the size of the array.
+// Array manipulation.
 #include <iostream>
 #include <vector>
 #include <algorithm> // for reverse function.

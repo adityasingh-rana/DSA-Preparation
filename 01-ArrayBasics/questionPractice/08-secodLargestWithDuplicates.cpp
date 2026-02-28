@@ -1,4 +1,6 @@
 // Find the Second Largest Element in the given array if duplicates are also present in inputs.
+// Array manipulation.
+
 #include <iostream>
 #include <vector>
 using namespace std;
