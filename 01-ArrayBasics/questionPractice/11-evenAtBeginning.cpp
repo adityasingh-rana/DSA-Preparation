@@ -1,5 +1,21 @@
 // Move all the even integers in the beginning of the give array followed by all the odd integers. The relative order of odd/even dosen't matter.
-// Two pointers
+
+
+// Problem: Move all even integers to the beginning of the array
+// followed by all odd integers.
+// Relative order does NOT matter.
+
+// Difficulty: Easy
+// Pattern: Two Pointers
+
+// Key Idea:
+// - Use two pointers (start and end).
+// - If start is even → move forward.
+// - If end is odd → move backward.
+// - Otherwise → swap.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
 
 #include<iostream>
 #include<vector>

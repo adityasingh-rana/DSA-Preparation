@@ -1,5 +1,18 @@
-// Sort an array consisting of only 0s and 1s.
-// Two pointers.
+// Problem: Sort an array consisting of only 0s and 1s.
+
+// Difficulty: Easy
+// Pattern: Two Pointers (Partitioning)
+
+// Key Idea:
+// - Place all 0s on the left.
+// - Place all 1s on the right.
+// - Use two pointers (i from start, j from end).
+// - If arr[i] is 0 → move i forward.
+// - If arr[i] is 1 and arr[j] is 0 → swap.
+// - If arr[j] is 1 → move j backward.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
 
 #include <iostream>
 #include <vector>
@@ -12,12 +25,12 @@ int main () {
   while (i<j)
   {
     if(arr[i] == 0) i++;
-    else if(arr[i] == 1 && arr[j] == 0){
+    else if(arr[j]==1) j--;
+    else {
       swap(arr[i],arr[j]);
       j--;
       i++;
     }
-    else if(arr[j]==1) j--;
   }
   for (int ele: arr){
     cout << ele << " ";
